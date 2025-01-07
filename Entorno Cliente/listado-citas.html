@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado citas-MedacDent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="Medac.Dent.html"><img src="IMAGENES/MEDACDENT.jpg" alt="Logo MedacDent" class="logo"></a>
+        <h1>Listado Completo de Citas</h1>
+    </header>
+    <table class="citas-table" border="2">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Fecha Cita</th>
+                <th>Telefono</th>
+                <th>Fecha Nac</th>
+                <th>DNI</th>
+                <th>Observaciones</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDatos"></tbody>
+    </table>
+
+    <div id="editarCita">
+        <h2>Editar Cita</h2>
+        <form id="formularioEditar">
+            <label for="nombreEditar">Nombre:</label>
+            <input type="text" id="nombreEditar" required>
+
+            <label for="apellidosEditar">Apellidos:</label>
+            <input type="text" id="apellidosEditar" required>
+
+            <label for="fechaCitaEditar">Fecha de la Cita:</label>
+            <input type="datetime-local" id="fechaCitaEditar" required>
+
+            <label for="telefonoEditar">Teléfono:</label>
+            <input type="tel" id="telefonoEditar" required>
+
+            <label for="fechaNacimientoEditar">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimientoEditar" required>
+
+            <label for="dniEditar">DNI:</label>
+            <input type="text" id="dniEditar" required>
+
+            <label for="observacionesEditar">Observaciones:</label>
+            <textarea id="observacionesEditar"></textarea>
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </div>
+
+
+    <script src="listado.js"></script>
+</body>
+<footer class="footer">
+    <p> Calle San Juan de Letrán 3, 11402 Jerez de la Frontera</p>
+    <p>Telefono de contacto: 642.31.32.12</p>
+    <p>Email: clinicamedacdent@info.com</p>
+    <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+    <p>&copy; 2024 MedacDent. Todos los derechos reservados.</p>
+</footer>
+
+</html>
